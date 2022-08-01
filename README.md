@@ -1,6 +1,6 @@
 # ncrs
 
-TODO: Write a description here
+A low-level ncurses wrapper for Crystal
 
 ## Installation
 
@@ -20,11 +20,31 @@ TODO: Write a description here
 require "ncrs"
 ```
 
-TODO: Write usage instructions here
+## Example
+
+```crystal
+require "ncrs"
+
+app = Ncrs::Ui.new
+app.ptrln "Type any character to see it in bold"
+
+app.noecho
+
+ch = app.input "Input: "
+
+app.ptrln "#{ch.unsafe_chr}", Ncrs::Consts::A_BOLD
+
+app.ref
+app.input
+app.end
+```
+
 
 ## Development
 
-TODO: Write development instructions here
+```bash
+$ shards build
+```
 
 ## Contributing
 
