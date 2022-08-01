@@ -9,7 +9,7 @@ TODO: Write a description here
    ```yaml
    dependencies:
      ncrs:
-       github: your-github-user/ncrs
+       github: nikolaykys/ncrs
    ```
 
 2. Run `shards install`
