@@ -26,9 +26,10 @@ require "ncrs"
 require "ncrs"
 
 app = Ncrs::Ui.new
-app.ptrln "Type any character to see it in bold"
 
 app.noecho
+
+app.ptrln "Type any character to see it in bold"
 
 ch = app.input "Input: "
 
