@@ -29,11 +29,11 @@ app = Ncrs::Ui.new
 
 app.noecho
 
-app.ptrln "Type any character to see it in bold"
+app.prtln "Type any character to see it in bold"
 
 ch = app.input "Input: "
 
-app.ptrln "#{ch.unsafe_chr}", Ncrs::Consts::A_BOLD
+app.prtln "#{ch.unsafe_chr}", Ncrs::Consts::A_BOLD
 
 app.ref
 app.input
