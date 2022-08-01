@@ -37,17 +37,17 @@ module Ncrs
       p "initialize Ui class #{__LINE__}"
     end
 
-    def ptrln(st : String, style : Int32 = -1)
+    def prtln(st : String, style : Int32 = -1)
       if style == -1
-        Libcrs::Win.printw("\n#{st}")
+        Libcrs::Win.printw("#{st}\n")
       else
         Libcrs::Win.attron(style)
-        Libcrs::Win.printw("\n#{st}")
+        Libcrs::Win.printw("#{st}\n")
         Libcrs::Win.attroff(style)
       end
     end
 
-    def ptr(st : String, style : Int32 = -1)
+    def prt(st : String, style : Int32 = -1)
       if style == -1
         Libcrs::Win.printw("#{st}")
       else
@@ -62,12 +62,12 @@ module Ncrs
     end
 
     def input(msg : String = "")
-      ptrln(msg)
+      prt(msg)
       return Libcrs::Win.getch
     end
 
     def input_chr(msg : String = "")
-      ptrln(msg)
+      prt(msg)
       return Libcrs::Win.getch().unsafe_chr
     end
 
