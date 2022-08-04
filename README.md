@@ -1,4 +1,4 @@
-# ncrs
+# Ncrs
 
 A low-level ncurses wrapper for Crystal
 
