@@ -57,4 +57,4 @@ $ shards build
 
 ## Contributors
 
-- [NikolayKYS](https://github.com/your-github-user) - creator and maintainer
+- [NikolayKYS](https://github.com/nikolaycc) - creator and maintainer
